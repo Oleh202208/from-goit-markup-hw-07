@@ -46,8 +46,8 @@ list-style: none;
     text-decoration: none;
 }
 
-/* header-all */
-.header-all{
+/* header-all  = nav */ 
+.nav{
     display: flex;
     align-items: center;
 
@@ -58,8 +58,6 @@ list-style: none;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
-    /* outline: 4px solid tomato; */
-    /* background-color: blueviolet; */
 }
 
 /*========== Header======== */
@@ -80,7 +78,7 @@ list-style: none;
     line-height: 1.2;
     text-decoration: none;
 }
-.logo-web{
+.logo__accent{
     color: #2196F3;
     font-family: 'Raleway';
     font-style: normal;
@@ -88,19 +86,19 @@ list-style: none;
     font-size: 26px;
     line-height: 1.2;
 }
-/* site-nav */
+/* site-nav = nav__list*/
 
-.site-nav{
+.nav__list{
     display: flex;
     margin-left: 93px;
 }
 
 
-.site-nav .item + .item{
+.nav__list .nav__item + .nav__item{
     margin-left: 50px;
 }
 
-.site-nav .link{
+.nav__list .nav__link{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -114,12 +112,12 @@ list-style: none;
 
 }
 
-.site-nav .link:hover, 
-.site-nav .link:focus{
+.nav__list .nav__link:hover, 
+.nav__list .lnav__link:focus{
     color: var(--accent-color);
 }
-
-.item .current{
+/* item = nav__item */
+.nav__item .current{
     position: relative;
 color: var(--accent-color);
 
@@ -127,7 +125,7 @@ color: var(--accent-color);
 .current{
     position: absolute;
 }
-.item .current::after {
+.nav__item .current::after {
     content: '';
 
     position: absolute;
