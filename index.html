@@ -28,7 +28,7 @@
     <!--=======Шапка Сайта========-->
 
     <header class="header">
-      <div class="container nav">
+      <div class="container header__container">
         <nav class="nav">
           <a href="./index.html" class="logo nav__logo"><span class="logo__accent">Web</span>Studio</a>
           <ul class="nav__list list">
@@ -37,32 +37,29 @@
             <li class="nav__item"><a href="./images/css_images/icons.svg" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contacts-nav list">
-          <li class="item">
-            <a class="contacts-link" href="mailto:info@devstudio.com">
-              <svg class="contacts-icon" width="16" height="12">
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/css_images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a>
-          </li>
-          <li class="item">
-            <a class="contacts-link" href="tel:+380961111111">
-              <svg class="contacts-icon" width="10" height="16">
+              </svg>info@devstudio.com</a></li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/css_images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a>
-          </li>
+              </svg>+38 096 111 11 11</a></li>
         </ul>
       </div>
     </header>
 
     <main>
+
       <!--=======Замовити послугу Hero ========-->
 
-      <section class="service hero">
-        <div class="container">
-          <h1 class="service-title title-hero">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button" data-modal-open>Замовити послугу</button>
+      <section class="hero">
+        <div class="hero__container">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
 
           <!-- =====Modal windows===== -->
 
@@ -124,30 +121,30 @@
 
       <!--=========Переваги==========-->
 
-      <section class="section">
-        <div class="container advances">
+      <section class="advances advances__section">
+        <div class="container advances__container">
           <h2 class="visually-hidden">Переваги </h2>
-          <ul class="list advances-text">
-            <li class="item-advances">
-              <h3 class="section-title-item icon-satellite">Увага до деталей</h3>
-              <p class="section-title-advances-text"
-                >Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p
+          <ul class="list advances__list">
+            <li class="advances__item">
+              <h3 class="advances__title icon__satellite">Увага до деталей</h3>
+              <p class="advances__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p
               >
             </li>
-            <li class="item-advances">
-              <h3 class="section-title-item icon-clock">Пунктуальність</h3>
+            <li class="advances__item">
+              <h3 class="advances__title icon__clock">Пунктуальність</h3>
               <p class="section-title-advances-text"
                 >Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p
               >
             </li>
-            <li class="item-advances">
-              <h3 class="section-title-item icon-laptop">Планування</h3>
+            <li class="advances__item">
+              <h3 class="advances__title icon__laptop">Планування</h3>
               <p class="section-title-advances-text"
                 >Так само консультація з широким активом значною мірою зумовлює.</p
               >
             </li>
-            <li class="item-advances">
-              <h3 class="section-title-item icon-space">Сучасні технології</h3>
+            <li class="advances__item">
+              <h3 class="advances__title icon__space">Сучасні технології</h3>
               <p class="section-title-advances-text"
                 >Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p
               >

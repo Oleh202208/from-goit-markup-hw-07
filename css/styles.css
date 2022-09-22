@@ -46,12 +46,7 @@ list-style: none;
     text-decoration: none;
 }
 
-/* header-all  = nav */ 
-.nav{
-    display: flex;
-    align-items: center;
 
-}
 /* container */
 .container{
     width: 1200px;
@@ -63,8 +58,13 @@ list-style: none;
 /*========== Header======== */
 
 
-.header{
-    
+/* header-all  = nav */ 
+
+
+.header__container{
+    display: flex;
+    align-items: center;
+
     background-color: var(--background-color);
     border-bottom: 1px solid #ECECEC ;
 
@@ -86,8 +86,13 @@ list-style: none;
     font-size: 26px;
     line-height: 1.2;
 }
-/* site-nav = nav__list*/
 
+
+/* site-nav = nav__list*/
+.nav{
+    display: flex;
+    align-items: center;
+}
 .nav__list{
     display: flex;
     margin-left: 93px;
@@ -122,9 +127,9 @@ list-style: none;
 color: var(--accent-color);
 
 }
-.current{
+/* .current{
     position: absolute;
-}
+} */
 .nav__item .current::after {
     content: '';
 
@@ -138,33 +143,33 @@ color: var(--accent-color);
 
 }
 
-/* contacts-nav */
+/* contacts-nav === = contacts*/
 
-.contacts-nav{
+.contacts{
     display: flex;
     margin-left: auto;
 }
-.contacts-nav .item + .item{
+.contacts .contacts__item + .contacts__item{
     margin-left: 50px;
 }
-.item{
+.contacts__item{
     display: flex;
     gap: 10px;
     align-items: center;
 justify-content: center;
 }
-.contacts-link{
+.contacts__link{
     display: flex;
     gap: 10px;
     align-items: center;
 justify-content: center;
 }
 
-.contacts-icon{
+.contacts__icon{
     fill: currentColor;
 }
 
-.contacts-nav .contacts-link{
+.contacts .contacts__link{
     color: var(--primary-text-color);
 font-weight: 500;
 font-size: 14px;
@@ -173,26 +178,14 @@ text-decoration: none;
 
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-nav .contacts-link:hover, 
-.contacts-nav .contacts-link:focus{
+.contacts .contacts__link:hover, 
+.contacts .contacts__link:focus{
     color: var(--accent-color);
 }
 
 
 /*======Замовити послугу Hero====== */
 
-
-.service-title{
-    width: 696px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-color: #FFFFFF;
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-}
 .hero{
     max-width: 1600px;
     height: 600px;
@@ -204,6 +197,33 @@ text-transform: uppercase;
     background-position: center;
     margin: 0 auto;
 
+}
+
+.hero__title{
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+color: #FFFFFF;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+.hero__button{
+    min-width: 216px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+border-radius: 4px;
+padding: 10px 32px;
+color: var(--background-color);
+background-color: var(--accent-color);
+font-family: 'Roboto';
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.06em;
+cursor: pointer;
 }
 
 /* ========button======== */
@@ -222,7 +242,6 @@ font-size: 16px;
 line-height: 1.9;
 letter-spacing: 0.06em;
 cursor: pointer;
-
 }
 
 /* ======Позиціонування===== */
@@ -473,16 +492,15 @@ color: var(--accent-color);
 
 /* ==========Переваги, advances========*/
 
-.section{
+.advances__section{
     padding: 94px 0;
 }
 
 .advances-text .item{
     width: 270px;
-    /* gap: 30px; */
 }
 
-.advances-text{
+.advances__list{
     display: flex;
     gap: 30px;
 } 
@@ -507,7 +525,7 @@ margin-right: 0;
     overflow: hidden;
 }
 
-.section-title-item{
+.advances__title{
     margin-bottom: 10px;
     color: var(--title-text-color);
     font-style: normal;
@@ -516,7 +534,7 @@ margin-right: 0;
     line-height: 16px;
     text-transform: uppercase;
 }
-.section-title-item::before {
+.advances__title::before {
     display: block;
     content: "";
     height: 120px;
@@ -526,21 +544,21 @@ margin-right: 0;
     margin-bottom: 30px;
 
 }
-.icon-satellite::before{
+.icon__satellite::before{
     background-image: url(../images/css_images/advances/Group1.png);
 }
-.icon-clock::before{
+.icon__clock::before{
     background-image: url(../images/css_images/advances/Group2.png);
 }
-.icon-laptop::before{
+.icon__laptop::before{
     background-image: url(../images/css_images/advances/Group3.png);
 }
-.icon-space::before{
+.icon__space::before{
     background-image: url(../images/css_images/advances/Group4.png);
 
 }
 
-.section-title-advances-text{
+.advances__text{
     line-height: 1.71;
     font-size: 14px;
     }
