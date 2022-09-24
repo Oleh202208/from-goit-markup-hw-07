@@ -1,5 +1,5 @@
 
-:root{
+/* :root{
     --primary-text-color:#757575;
     --title-text-color: #212121;
     --accent-color:#2196F3;
@@ -8,21 +8,21 @@
     --background-color-futer: #2F303A;
     --color-logo: #000000;
     --color-icons: #AFB1B8;
-}
-body{
+} */
+/* body{
     background-color: var(--background-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
-}
+} */
 
 /* 
 #EEEEEE - колір background в картинок в портфоліо
 #FFFFFF60% колір text в футер: тел і милo
 #ECECEC - колір background header в середині
 */
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -35,26 +35,42 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-}
+} */
 
-/* Утіліти */
-.list{
+/* .visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} */
+
+/* ======Утіліти======= */
+/* .list{
     padding: 0;
     margin: 0;
 list-style: none;
 }
 .linka{
     text-decoration: none;
-}
+} */
 
 
 /* container */
-.container{
+/* .container{
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
-}
+} */
+/* .section{
+    margin: 94px 0;
+} */
 
 /*========== Header======== */
 
@@ -62,15 +78,15 @@ list-style: none;
 /* header-all  = nav */ 
 
 
-.header__container{
+/* .header__container{
     display: flex;
     align-items: center;
 
     background-color: var(--background-color);
     border-bottom: 1px solid #ECECEC ;
 
-}
-.logo{
+} */
+/* .logo{
     color:#000000;
     font-family: 'Raleway';
     font-style: normal;
@@ -86,11 +102,11 @@ list-style: none;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-}
+} */
 
 
-/* site-nav = nav__list*/
-.nav{
+/* site-nav = nav__list */
+/* .nav{
     display: flex;
     align-items: center;
 }
@@ -122,15 +138,12 @@ list-style: none;
 .nav__list .lnav__link:focus{
     color: var(--accent-color);
 }
-/* item = nav__item */
+
 .nav__item .current{
     position: relative;
 color: var(--accent-color);
 
 }
-/* .current{
-    position: absolute;
-} */
 .nav__item .current::after {
     content: '';
 
@@ -142,11 +155,11 @@ color: var(--accent-color);
     border-radius: 2px;
     background-color: var(--accent-color);
 
-}
+}  */
 
 /* contacts-nav === = contacts*/
 
-.contacts{
+/* .contacts{
     display: flex;
     margin-left: auto;
 }
@@ -182,15 +195,14 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .contacts .contacts__link:hover, 
 .contacts .contacts__link:focus{
     color: var(--accent-color);
-}
+} */
 
 
 /*======Замовити послугу Hero====== */
 
-.hero{
+/* .hero{
     max-width: 1600px;
     height: 600px;
-    /* background-color: #2F303A ; */
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/css_images/hero/Img.jpg);
     text-align: center;
     padding: 200px 0;
@@ -225,11 +237,11 @@ font-size: 16px;
 line-height: 1.9;
 letter-spacing: 0.06em;
 cursor: pointer;
-}
+} */
 
 /* ========button======== */
 
-.button{
+/* .button{
     min-width: 216px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
@@ -243,15 +255,14 @@ font-size: 16px;
 line-height: 1.9;
 letter-spacing: 0.06em;
 cursor: pointer;
-}
+} */
 
 /* ======Позиціонування===== */
 
-.backdrop{
+/* .backdrop{
     position: fixed;
     top: 0;
     left: 0;
-/* z-index: 1; */
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
@@ -278,7 +289,9 @@ height: 581px;
 background-color: var(--background-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
-}
+} */
+
+
 
 /* .modal-icon{
     color: var(--accent-color);
@@ -291,7 +304,9 @@ border-radius: 4px;
 } */
 
 
-.modal-btn{
+
+
+/* .modal-btn{
     position: absolute;
     top: 8px;
     right: 8px;
@@ -319,13 +334,13 @@ border-radius: 4px;
 .modal-btn:focus{
     fill: currentColor;
     border: 1px solid rgba(0, 0, 0, 0.1);
-}
+} */
 
 
 /* ======== Замовити послугу Regidter FORM======== */
 
 
-.register-form-field{
+/* .register-form-field{
     display: block;
     margin-bottom: 25px;
     position: relative;
@@ -489,11 +504,11 @@ color: var(--accent-color);
 .register-form-checkbox:checked + 
 .register-form-icons .icon-uncheck{
     opacity: 0;
-}
+} */
 
 /* ==========Переваги, advances========*/
 
-.advances__section{
+/* .advances__section{
     padding: 94px 0;
 }
 .advances__container{
@@ -562,13 +577,13 @@ color: var(--accent-color);
 .advances__text{
     line-height: 1.71;
     font-size: 14px;
-    }
+    } */
 
 
 /* ===========Чим займаємося========== */
 
 
-.affairs__section{
+/* .affairs__section{
         padding: 94px 0;
 }
 
@@ -617,11 +632,11 @@ background-color: rgba(47, 48, 58, 0.8);
 font-weight: 700;
 text-transform: uppercase;
 color: #FFFFFF;
-}
+} */
 
 /* =======Команда========= */
 
-.team__section{
+/* .team__section{
     padding: 94px 0;
     background-color:var(--background-color-second);
 }
@@ -654,10 +669,10 @@ border-radius: 0px 0px 4px 4px;
 }
 .team__item:last-child{
     margin-right: 0;
-}
+} */
 
 
-.socials__headline{
+/* .socials__headline{
     margin: 0;
     margin-bottom: 10px;
     color: var(--title-text-color);
@@ -666,12 +681,12 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.2;
     text-align: center;
     
-    }
+    } */
 
 
     /* =====socials===== */
 
-.socials__text{
+/* .socials__text{
     margin-bottom: 16px;
 font-weight: 400;
 font-size: 16px;
@@ -712,12 +727,12 @@ justify-content: center;
 
 .socials__icon{
     fill: currentColor;
-}
+} */
 
 /*============ Постійні клієнти========== */
 
 
-.customers__section{
+/* .customers__section{
     padding: 94px 0;
 }
 .customers__container{
@@ -762,13 +777,13 @@ text-align: center;
 }
 .customers__icon{
     fill: currentColor;
-}
+} */
 
 
 
 
 /* ===========Footer=========== */
-
+/* 
 .footer__content{
     padding: 60px 0;
     background-color: var(--background-color-futer);
@@ -826,7 +841,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .adress__link:hover,
 .adress__link:focus{
 color: var(--accent-color);
-}
+} */
 /* .footer-contacts:hover,
 .footer-contacts:focus{
 color: var(--accent-color);
@@ -834,7 +849,7 @@ color: var(--accent-color);
 
 /* ======Footer social========= */
 
-
+/* 
 .join-site{
     display: flex;
     gap: 10px;
@@ -874,11 +889,11 @@ justify-content: center;
 .footersoc-link:hover,
 .footersoc-link:focus {
 background-color: var(--accent-color);
-}
+} */
 
 /* ========= Footer Forms======== */
 
-.footer-form{
+/* .footer-form{
     margin-left: auto;
 }
 
@@ -916,26 +931,15 @@ padding-left: 28px;
     top: 15px;
     right: 13%;
 
-}
+} */
 
 
 /* ================Портфоліо=================*/
-
+/* 
 .section{
     margin: 94px 0;
 }
-.visually-hidden{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+
 
 .imput{
     display: block;
@@ -1004,10 +1008,10 @@ min-width: 130px;
     flex-wrap: wrap;
     gap: 30px;
 
-}
+} */
 /* =====Overlay====== */
 
-
+/* 
 .products-overl{
     position: relative;
     overflow: hidden;
@@ -1089,4 +1093,4 @@ line-height: 1.9;
 .products-text{
 padding: 20px 24px;
 border: 1px solid #EEEEEE ;
-}
+} */
