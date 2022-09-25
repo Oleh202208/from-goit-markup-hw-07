@@ -640,6 +640,10 @@ img {
   font-size: 14px;
 }
 
+.affairs__section {
+  margin-bottom: 94px;
+}
+
 .affairs__container {
   width: 1200px;
   margin-left: auto;
@@ -796,7 +800,7 @@ img {
 }
 
 .customers__section {
-  padding: 94px 0;
+  margin: 94px 0;
 }
 
 .customers__container {
