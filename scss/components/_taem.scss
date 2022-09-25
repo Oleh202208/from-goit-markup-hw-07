@@ -21,6 +21,7 @@ text-align: center;
 }
 .team__list{
     display: flex;
+    @extend .list;
 }
 
 .team__item{

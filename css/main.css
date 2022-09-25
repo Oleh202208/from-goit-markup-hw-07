@@ -54,13 +54,13 @@ img {
   height: auto;
 }
 
-.list {
+.list, .address__list, .customers__list, .socials__list, .team__list, .affairs__list, .advances__list, .contacts .contacts__item + .contacts__item, .nav__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.linka {
+.linka, .adress__link {
   text-decoration: none;
 }
 

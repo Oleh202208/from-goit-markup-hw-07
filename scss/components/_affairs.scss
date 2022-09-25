@@ -21,6 +21,7 @@ text-align: center;
 
 .affairs__list{
 display: flex;
+@extend .list;
 }
 .affairs__item{
 position: relative;

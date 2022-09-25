@@ -19,6 +19,7 @@ text-align: center;
 .customers__list{
   display: flex;
   gap: 30px;
+  @extend .list;
 }
   
 .customers__link{

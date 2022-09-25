@@ -29,6 +29,7 @@
 .advances__list{
   display: flex;
   gap: 30px;
+  @extend .list;
 } 
 
 .advances__title{

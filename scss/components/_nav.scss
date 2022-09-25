@@ -5,6 +5,7 @@
   &__list{
     display: flex;
     margin-left: 93px;
+    @extend .list;
   }
   &__list &__item + &__item{
     margin-left: 50px;

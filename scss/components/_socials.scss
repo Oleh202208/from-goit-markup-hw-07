@@ -15,6 +15,7 @@ padding: 30px 0;
   display: flex;
   justify-content: center;
   gap: 10px;
+  @extend .list;
 }
 .socials__link{
 display: flex;
