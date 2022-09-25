@@ -563,6 +563,10 @@ img {
   opacity: 0;
 }
 
+.advances__section {
+  margin: 94px 0;
+}
+
 .advances__container {
   width: 1200px;
   margin-left: auto;
@@ -634,10 +638,6 @@ img {
 .advances__text {
   line-height: 1.71;
   font-size: 14px;
-}
-
-.affairs__section {
-  padding: 94px 0;
 }
 
 .affairs__container {
